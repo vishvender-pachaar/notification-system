@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Notifications</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-messaging-compat.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Web Notifications Demo</h1>
+            <div class="status-container">
+                <div id="status" class="status-offline">⏳ Connecting...</div>
+                <button id="subscribeButton" class="btn" disabled>
+                    Enable Notifications
+                </button>
+            </div>
+            <div class="notification-preview hidden">
+                <h3>Latest Notification</h3>
+                <div id="notificationContent"></div>
+            </div>
+        </div>
+    </div>
+    <script src="/app.js"></script>
+</body>
+</html>
