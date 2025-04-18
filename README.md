@@ -27,6 +27,8 @@ const firebaseConfig = {
     appId: "YOUR_APP_ID",
     measurementId: "YOUR_MEASUREMENT_ID",
 };
+
+
 Generate a VAPID key:
 
 Go to Project Settings > Cloud Messaging > Web Push certificates.
