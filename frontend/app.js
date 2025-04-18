@@ -17,7 +17,7 @@ const firebaseConfig = {
   const messaging = firebase.messaging();
   
   // VAPID Key
-  const vapidKey = "BEvloe1xskKaNDjxzsYXMx2oj28icnaq8_Q43aePDqKPx9UttGIPVIkEq8Mf_qtSuyPKB16JA0h3FVQeHGFaVtU";
+  const vapidKey = "your-vapid-key-here"; // Replace with your actual VAPID key
   
   // Register the service worker
   if ("serviceWorker" in navigator) {
