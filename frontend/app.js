@@ -1,15 +1,17 @@
 
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+  
 const firebaseConfig = {
-    apiKey: process.env.FIREBASE_API_KEY,
-    authDomain: process.env.FIREBASE_AUTH_DOMAIN,
-    projectId: process.env.FIREBASE_PROJECT_ID,
-    storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
-    messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
-    appId: process.env.FIREBASE_APP_ID,
-    measurementId: process.env.FIREBASE_MEASUREMENT_ID,
+    apiKey: "AIzaSyB44rSEhxsyqj6Kea8ht_Ri5uh0FamfUrM",
+    authDomain: "kraftbase-34571.firebaseapp.com",
+    projectId: "kraftbase-34571",
+    storageBucket: "kraftbase-34571.firebasestorage.app",
+    messagingSenderId: "301987670512",
+    appId: "1:301987670512:web:88974c8d99778f4d2d5535",
+    measurementId: "G-TPBQ4DF0PN"
   };
   
+
   firebase.initializeApp(firebaseConfig);
   const messaging = firebase.messaging();
   
@@ -31,7 +33,7 @@ if ('serviceWorker' in navigator) {
       const permission = await Notification.requestPermission();
       if (permission === 'granted') {
         const token = await messaging.getToken({
-          vapidKey: process.env.FIREBASE_VAPID_KEY
+          vapidKey: "BEvloe1xskKaNDjxzsYXMx2oj28icnaq8_Q43aePDqKPx9UttGIPVIkEq8Mf_qtSuyPKB16JA0h3FVQeHGFaVtU"
         });
         console.log("FCM Token:", token);
         
